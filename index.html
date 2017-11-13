@@ -4,6 +4,7 @@
         <meta name="viewport" content="minimum-scale=1.0, maximum-scale=1.0">
         <title>Random Coin</title>
         <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+        <link rel="shortcut icon" href="favicon.ico"/>
         <script type="text/javascript">
             var upCount=0;
             var downCount=0;
@@ -41,10 +42,11 @@
         </script>
     </head>
     <body>
-        <div id="div_0" style="font-size:14px;margin:20px;color:#FF0000;">正</div>
-        <div id="div_1" style="display:none;font-size:14px;margin:20px;color:#FF0000;">反</div>
+        <div id="div_0" class="font">正</div>
+        <div id="div_1" class="font" style="display:none;">反</div>
         <button id="btn_0" onclick="runRandom()" class="button orange">抛硬币</button><br/>
-        结果： 正占比<span id="one"></span>% , 反占比<span id="zero"></span>%  <br/>
+        <div>结果： 正占比<span id="one"></span>% , 反占比<span id="zero"></span>%</div>
+        <br/>
         <span id="result"></span>
     </body>
 </html>

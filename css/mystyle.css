@@ -65,6 +65,12 @@ div {
     padding: .2em 1em .275em;
 }
 
+.font {
+    font-size:34px;
+    margin:10px;
+    color:#FF0000;
+}
+
 /* orange */
 .orange {
     color: #fef4e9;
