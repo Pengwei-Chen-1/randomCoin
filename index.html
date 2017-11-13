@@ -1,7 +1,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="minimum-scale=1.0, maximum-scale=1.0">
         <title>Random Coin</title>
+        <link rel="stylesheet" type="text/css" href="css/mystyle.css">
         <script type="text/javascript">
             var upCount=0;
             var downCount=0;
@@ -24,10 +26,10 @@
 
                 if (n == 0) {
                     downCount++;
-                    changeDiv('0',2);
+                    changeDiv('1',2);
                 } else {
                     upCount++;
-                    changeDiv('1',2);
+                    changeDiv('0',2);
                 }
                 var upCountPer = Math.round(upCount / (downCount+upCount) * 10000) / 100.00;
                 var downCountPer = Math.round(downCount / (downCount+upCount) * 10000) / 100.00;
@@ -41,7 +43,7 @@
     <body>
         <div id="div_0" style="font-size:14px;margin:20px;color:#FF0000;">正</div>
         <div id="div_1" style="display:none;font-size:14px;margin:20px;color:#FF0000;">反</div>
-        <button id="btn_0" onclick="runRandom()">抛硬币</button><br/>
+        <button id="btn_0" onclick="runRandom()" class="button orange">抛硬币</button><br/>
         结果： 正占比<span id="one"></span>% , 反占比<span id="zero"></span>%  <br/>
         <span id="result"></span>
     </body>
